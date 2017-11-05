@@ -16,19 +16,22 @@
             <li><a href="#">Фото и видео</a></li>
             <li><a href="#">Карта штата</a></li>
             <li><a href="#">Гостиницы</a></li>
+		  </ul>	
           </nav>
         </header>
         <main class="main-inner">
         <h1 class="visually-hidden">Поиск жилья по категориям</h1>
         <section class="filter-search">
+		  <h2 class="visually-hidden">Сортировка отелей</h2>
           <!-- Здесь будет форма -->
           <div class="sort">
 			<b>Найдено:</b>
 			<span class="">Сортировка:</span>
 			<ul class="sort-list">
-			  <li class="sort-price">По цене</li>
-			  <li class="sort-type">По типу</li>
-			  <li class="rating">По рейтингу</li>
+			  <li class="sort-list sort-price">По цене</li>
+			  <li class="sort-list sort-type">По типу</li>
+			  <li class="sort-list sort-rating">По рейтингу</li>
+			</ul>  
 			  <div class="arows">
 				<a href="#"></a>
 				<a href="#"></a>
@@ -41,13 +44,13 @@
 		  
             <li class="hotels-item">
 			  <a class="hotel-item-image"><img src="#" width="200" height="200" alt="Amara resort & spa"></a>
-              <p class="hotel-item-info">
+              <div class="hotel-item-info">
 			    <h3 class="hotel-item-title"><a href="#">Amara resort & spa</a></h3>               
 			    <p class="hotel-item-text">Гостиница</p>
 				<p class="hotel-item-text"> от 3500 Р.</p>
 				  <div class="hotel-item-btn"><a href="#">Подробнее</a></div>			                   
                   <div class="hotel-item-btn-dark"><a href="#">Забронировать</a></div>			    				
-              </p>
+              </div>
 			  <div class="rank">
 				<div class="rank-mark">
 				</div>
@@ -57,13 +60,13 @@
 			
 			<li class="hotels-item">
 			  <a class="hotel-item-image"><img src="#" width="200" height="200" alt="Desert quail inn"></a>
-              <p class="hotel-item-info">
+              <div class="hotel-item-info">
 			    <h3 class="hotel-item-title"><a href="#">Desert quail inn</a></h3>				
 				<p class="hotel-item-text">Мотель</p>
 				<p class="hotel-item-text"> от 2000 Р.</p>
 				  <div class="hotel-item-btn"><a href="#">Подробнее</a></div>			                   
                   <div class="hotel-item-btn-dark"><a href="#">Забронировать</a></div>							   		
-              </p>
+              </div>
 			  <div class="rank">
 				<div class="rank-mark">
 				</div>
@@ -73,13 +76,13 @@
 			
 			<li class="hotels-item">
 			  <a class="hotel-item-image"><img src="#" width="200" height="200" alt="Villas at poco diablo"></a>
-              <p class="hotel-item-info">
+              <div class="hotel-item-info">
 			    <h3 class="hotel-item-title"><a href="#">Villas at poco diablo</a></h3>				
 				<p class="hotel-item-text">Апартаменты</p>
 				<p class="hotel-item-text"> от 4000 Р.</p>
 				  <div class="hotel-item-btn"><a href="#">Подробнее</a></div>			                   
                   <div class="hotel-item-btn-dark"><a href="#">Забронировать</a></div>					
-              </p>
+              </div>
 			  <div class="rank">
 				<div class="rank-mark">
 				</div>
@@ -93,7 +96,7 @@
         </section>
       </main>
       <footer class="inner-footer">
-        <b>#visitsedona</b>
+        <p>#visitsedona</p>
         <div class="social-btn">
           <ul class="social-list">
             <li><a class="social-btn tw-btn" href="#">Твитер</a></li>
