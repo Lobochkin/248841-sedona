@@ -23,9 +23,53 @@
     </header>
     <main class="main-inner">
       <h1 class="visually-hidden">Поиск жилья по категориям</h1>
-      <section class="filter-search">
+      <section class="filters-search">
         <h2 class="visually-hidden">Сортировка отелей</h2>
-        <!-- Здесь будет форма -->
+        <form class="filter" method="get" action="" oninput="resultmax.value=up">
+          <fieldset>
+            <legend>
+              Инфраструктура:
+            </legend>
+            <ul>
+              <li class="visually-hidden filter-option">
+                <input type="checkbox" name="Бассейн" id="pool">
+                <label for="pool">Бассейн</label>
+              </li>
+              <li class="visually-hidden filter-option">
+                <input type="checkbox" name="Парковка" id="parking">
+                <label for="parking">Парковка</label>
+              </li>
+              <li class="visually-hidden filter-option">
+                <input type="checkbox" name="wi-fi" id="wi-fi">
+                <label for="wi-fi">WI-FI</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>
+              Тип жилья:
+            </legend>
+            <ul>
+              <li class="visually-hidden filter-option">
+                <input type="checkbox" name="Hotel" id="hotel">
+                <label for="hotel">Гостиница</label>
+              </li>
+              <li class="visually-hidden filter-option">
+                <input type="checkbox" name="Motel" id="motel">
+                <label for="motel">Мотель</label>
+              </li>
+              <li class="visually-hidden filter-option">
+                <input type="checkbox" name="apartments" id="apartments">
+                <label for="apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <b>Стоимость в сутки (Р):</b>
+          <output name="up">
+            До 3000
+          </output>
+          <input type="range" min="0" max="3000" step="50" name="resultmax">
+        </form>
         <div class="sort">
           <b сlass="sort-title">Найдено:</b>
           <span class="sort-caption">Сортировка:</span>
