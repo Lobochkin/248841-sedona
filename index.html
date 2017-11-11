@@ -38,7 +38,7 @@
             <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </li>
           <li class="features-image">
-            <img src="img/homes.jpg" width="800" height="401" alt="Живописные улицы Седоны">
+            <img src="img/homes.jpg" width="800" height="401" alt="фотография домов">
           </li>
           <li class="features-item features-item-light">
             <h3 class="features-title features-title-house">Жилье</h3>
@@ -54,7 +54,7 @@
           </li>
 
           <li class="features-image">
-            <img src="img/rocks.jpg" width="800" height="400" alt="Узкий скалистый мост">
+            <img src="img/rocks.jpg" width="800" height="400" alt="фотография моста">
           </li>
           <li class="features-item">
             <h3 class="features-title">Там есть мост дьявола</h3>
@@ -92,26 +92,28 @@
     <footer class="main-footer">
       <div class="map"><img src="img/map.jpg" width="1200" height="593" alt="Карта расположения Седоны">
       </div>
-      <div class="search-popur">
+      <form class="search-popur" action="" method="post">
         <p>
-          <b>Дата заезда</b>
-          <span>форма</span>
+          <label for=""datein>Дата заезда</label>
+          <input id="datein" type="text" name="datein" value="" placeholder="08.10.2017">
         </p>
         <p>
-          <b>Дата выезда</b>
-          <span>форма</span>
+          <label for=""dateout>Дата выезда:</label>          
+		  <input id="dateout" type="text" name="dateout" value="" placeholder="08.10.2017">
         </p>
         <p>
-          <b>Взрослые:</b>
-          <span>форма</span>
-          <b>Дети:</b>
-          <span>форма</span>
+          <label for="grownups">Взрослые:</label>
+          <input id="grownups" type="number" min="0" step="1"></input>          
         </p>
-        <a class="popur-btn">
-          <p>Найти</p>
-        </a>
+		<p>
+          <label for="children">Дети:</label>
+          <input id="children" type="number" min="0" step="1"></input>          
+        </p>
+        <button class="popur-btn" type="submit" value="Найти">
+          Найти
+        </button>
 
-      </div>
+      </form>
       <div class="main-footer-wrapper">
         <p>#visitsedona</p>
         <div class="footer-social">

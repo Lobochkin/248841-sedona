@@ -25,14 +25,14 @@
       <h1 class="visually-hidden">Поиск жилья по категориям</h1>
       <section class="filters-search">
         <h2 class="visually-hidden">Сортировка отелей</h2>
-        <form class="filter" method="get" action="" oninput="resultmax.value=up">
+        <form class="filter" method="get" action="" oninput="resultmax.value=up resultmin.value=min">
           <fieldset>
             <legend>
               Инфраструктура:
             </legend>
             <ul>
               <li class="visually-hidden filter-option">
-                <input type="checkbox" name="Бассейн" id="pool">
+                <input type="checkbox" name="Бассейн" id="pool" checked>
                 <label for="pool">Бассейн</label>
               </li>
               <li class="visually-hidden filter-option">
@@ -51,24 +51,29 @@
             </legend>
             <ul>
               <li class="visually-hidden filter-option">
-                <input type="checkbox" name="Hotel" id="hotel">
+                <input type="checkbox" name="Hotel" id="hotel" checked>
                 <label for="hotel">Гостиница</label>
               </li>
               <li class="visually-hidden filter-option">
-                <input type="checkbox" name="Motel" id="motel">
+                <input type="checkbox" name="Motel" id="motel" checked>
                 <label for="motel">Мотель</label>
               </li>
               <li class="visually-hidden filter-option">
-                <input type="checkbox" name="apartments" id="apartments">
+                <input type="checkbox" name="apartments" id="apartments" checked>
                 <label for="apartments">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
           <b>Стоимость в сутки (Р):</b>
+		  <output name="min">
+            От 0
+          </output>
           <output name="up">
             До 3000
           </output>
           <input type="range" min="0" max="3000" step="50" name="resultmax">
+		  <input type="range" min="0" max="3000" step="50" name="resultmin">
+		  <button type="submit" class="filter-button">Показать</button>
         </form>
         <div class="sort">
           <b сlass="sort-title">Найдено:</b>
