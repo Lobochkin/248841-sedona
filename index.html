@@ -103,12 +103,18 @@
 		  <input id="dateout" type="date" name="dateout" value="" placeholder="08.10.2017"><span class="visuaaly-hidden"></span></input>
         </p>
         <p>
-          <label for="grownups">Взрослые:</label>
-          <input id="grownups" type="number" min="0" step="1"><span class="visuaaly-hidden"></span></input>          
+          <label for="grownups">Взрослые:</label>          
+		  <button class="search-btn search-btn-lower" type="submit"><span class="visuaaly-hidden">Уменьшить</span></button>
+		  <input id="grownups" type="text" placeholder="2">
+		  <button class="search-btn search-btn-raise" type="submit"><span class="visuaaly-hidden">Увеличить</span></button>
+		           
         </p>
 		<p>
-          <label for="children">Дети:</label>
-          <input id="children" type="number" min="0" step="1"><span class="visuaaly-hidden"></span></input>          
+          <label for="children">Дети:</label>          
+		  <button class="search-btn search-btn-lower" type="submit"><span class="visuaaly-hidden">Уменьшить</span></button>
+		  <input id="children" type="text" placeholder="0">
+		  <button class="search-btn search-btn-raise" type="submit"><span class="visuaaly-hidden">Увеличить</span></button>
+		           
         </p>
         <button class="search-form-btn" type="submit">
           Найти
