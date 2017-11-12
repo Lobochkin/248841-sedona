@@ -10,7 +10,7 @@
   <div class="container">
     <header class="main-header">
       <nav class="main-navigation">
-        <a href="index.html" class="main-header-logo">
+        <a class="main-header-logo" href="index.html">
               <img src="img/logo.png" width="138" height="70" alt="Логотип Sedona">
             </a>
         <ul class="site-navigation">
@@ -25,27 +25,27 @@
       <h1 class="visually-hidden">Поиск жилья по категориям</h1>
       <section class="filters-search">
         <h2 class="visually-hidden">Сортировка отелей</h2>
-        <form class="filter" method="get" action="" oninput="resultmax.value=up resultmin.value=min">
-          <fieldset>
-            <legend>
+        <form class="filter" method="get" action="echo.htmlacademy.ru">
+          <fieldset сlass="filter-group">
+            <legend class="filter-group-title">
               Инфраструктура:
             </legend>
             <ul>
-              <li class="visually-hidden filter-option">
-                <input type="checkbox" name="Бассейн" id="pool" checked>
+              <li class="filter-option">
+                <input class="visually-hidden" type="checkbox" name="Бассейн" id="pool" checked>
                 <label for="pool">Бассейн</label>
               </li>
-              <li class="visually-hidden filter-option">
-                <input type="checkbox" name="Парковка" id="parking">
+              <li class="filter-option">
+                <input class="visually-hidden" type="checkbox" name="Парковка" id="parking">
                 <label for="parking">Парковка</label>
               </li>
-              <li class="visually-hidden filter-option">
-                <input type="checkbox" name="wi-fi" id="wi-fi">
+              <li class="filter-option">
+                <input class="visually-hidden" type="checkbox" name="wi-fi" id="wi-fi">
                 <label for="wi-fi">WI-FI</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset сlass="filter-group">
             <legend>
               Тип жилья:
             </legend>
@@ -64,16 +64,15 @@
               </li>
             </ul>
           </fieldset>
+		  <fieldset сlass="filter-group-price">
           <b>Стоимость в сутки (Р):</b>
-		  <output name="min">
-            От 0
-          </output>
-          <output name="up">
-            До 3000
-          </output>
-          <input type="range" min="0" max="3000" step="50" name="resultmax">
-		  <input type="range" min="0" max="3000" step="50" name="resultmin">
-		  <button type="submit" class="filter-button">Показать</button>
+		  <div class="scale">
+<div class="diapason"></div>
+<div class="toggle toggle-min"></div>
+<div class="toggle toggle-max"></div>
+</div>
+		  <button class="filter-button" type="submit">Показать</button>
+		  </fieldset>
         </form>
         <div class="sort">
           <b сlass="sort-title">Найдено:</b>
@@ -103,7 +102,7 @@
               <a class="hotel-item-btn-dark" href="#">Забронировать</a>
             </div>
             <div class="rank">
-              <div class="rank-mark">
+              <div class="rank-mark"><span class="visuaaly-hidden">4 звезды</span>
               </div>
               <div class="rank-grade">Рейтинг:8,5</div>
             </div>
@@ -119,7 +118,7 @@
               <a class="hotel-item-btn-dark" href="#">Забронировать</a>
             </div>
             <div class="rank">
-              <div class="rank-mark">
+              <div class="rank-mark"><span class="visuaaly-hidden">3 звезды</span>
               </div>
               <div class="rank-grade">Рейтинг:8,9</div>
             </div>
@@ -135,7 +134,7 @@
               <a class="hotel-item-btn-dark" href="#">Забронировать</a>
             </div>
             <div class="rank">
-              <div class="rank-mark">
+              <div class="rank-mark"><span class="visuaaly-hidden">2 звезды</span>
               </div>
               <div class="rank-grade">
                 <b>Рейтинг:9,2</b>
@@ -150,12 +149,12 @@
       <p>#visitsedona</p>
       <div class="footer-social">
         <ul class="social-list">
-          <li><a class="social-btn tw-btn" href="#">Твитер</a></li>
-          <li><a class="social-btn fb-btn" href="#">Фейсбук</a></li>
-          <li><a class="social-btn yt-btn" href="#">Ютьюб</a></li>
+          <li><a class="social-btn tw-btn" href="#"><span class="visuaaly-hidden">Ссылка на сайт Твитер</span></a></li>
+          <li><a class="social-btn fb-btn" href="#"><span class="visuaaly-hidden">Ссылка на сайт Фейсбук</span></a></li>
+          <li><a class="social-btn yt-btn" href="#"><span class="visuaaly-hidden">Ссылка на сайт Ютьюб</span></a></li>
         </ul>
       </div>
-      <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss"><img src="#" width="#" height="#" alt="#">Website by</a>
+      <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss"><img src="#" width="#" height="#" alt="Логотип HTMLAcademy">Website by</a>
     </footer>
   </div>
 </body>

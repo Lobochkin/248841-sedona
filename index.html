@@ -23,7 +23,7 @@
     </header>
 
     <main class="index-main">
-      <div class="intro"><img src=""img\mountains.jpg"" width="1200" height="800" alt="WELCOME to SEDONA"></div>
+      <div class="intro"><img src="img\mountains.jpg" width="1200" height="800" alt="WELCOME to SEDONA"></div>
       <div class="promo-text">
         <h1 class="main-title">Седона - небольшой городок в аризоне, заслуживающий большего!</h1>
         <p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон</p>
@@ -92,39 +92,40 @@
     <footer class="main-footer">
       <div class="map"><img src="img/map.jpg" width="1200" height="593" alt="Карта расположения Седоны">
       </div>
-      <form class="search-popur" action="" method="post">
+	  <div class="search-popup">
+      <form class="search-popur" action="echo.htmlacademy.ru" method="post">
         <p>
-          <label for=""datein>Дата заезда</label>
-          <input id="datein" type="text" name="datein" value="" placeholder="08.10.2017">
+          <label for="datein">Дата заезда</label>
+          <input id="datein" type="date" name="datein" value="" placeholder="08.10.2017"><span class="visuaaly-hidden"></span></input>
         </p>
         <p>
-          <label for=""dateout>Дата выезда:</label>          
-		  <input id="dateout" type="text" name="dateout" value="" placeholder="08.10.2017">
+          <label for="dateout">Дата выезда:</label>          
+		  <input id="dateout" type="date" name="dateout" value="" placeholder="08.10.2017"><span class="visuaaly-hidden"></span></input>
         </p>
         <p>
           <label for="grownups">Взрослые:</label>
-          <input id="grownups" type="number" min="0" step="1"></input>          
+          <input id="grownups" type="number" min="0" step="1"><span class="visuaaly-hidden"></span></input>          
         </p>
 		<p>
           <label for="children">Дети:</label>
-          <input id="children" type="number" min="0" step="1"></input>          
+          <input id="children" type="number" min="0" step="1"><span class="visuaaly-hidden"></span></input>          
         </p>
-        <button class="popur-btn" type="submit" value="Найти">
+        <button class="search-form-btn" type="submit">
           Найти
         </button>
-
       </form>
+	  </div>
       <div class="main-footer-wrapper">
         <p>#visitsedona</p>
-        <div class="footer-social">
-          <ul class="social-list">
-            <li><a class="social-btn tw-btn" href="#">Твитер</a></li>
-            <li><a class="social-btn fb-btn" href="#">Фейсбук</a></li>
-            <li><a class="social-btn yt-btn" href="#">Ютьюб</a></li>
-          </ul>
-        </div>
-        <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss"><img src="#" width="#" height="#" alt="#">Website by</a>
+      <div class="footer-social">
+        <ul class="social-list">
+          <li><a class="social-btn tw-btn" href="#"><span class="visuaaly-hidden">Ссылка на сайт Твитер</span></a></li>
+          <li><a class="social-btn fb-btn" href="#"><span class="visuaaly-hidden">Ссылка на сайт Фейсбук</span></a></li>
+          <li><a class="social-btn yt-btn" href="#"><span class="visuaaly-hidden">Ссылка на сайт Ютьюб</span></a></li>
+        </ul>
       </div>
+      <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss"><img src="#" width="#" height="#" alt="Логотип HTMLAcademy">Website by</a>
+	  </div>
     </footer>
   </div>
 </body>
