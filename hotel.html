@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Выбор отеля</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -17,7 +19,7 @@
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
-          <li class="active"><a>Гостиницы</a></li>
+          <li><a class="active">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -50,16 +52,16 @@
               Тип жилья:
             </legend>
             <ul>
-              <li class="visually-hidden filter-option">
-                <input type="checkbox" name="Hotel" id="hotel" checked>
+              <li class="filter-option">
+                <input class="visually-hidden" type="checkbox" name="Hotel" id="hotel" checked>
                 <label for="hotel">Гостиница</label>
               </li>
-              <li class="visually-hidden filter-option">
-                <input type="checkbox" name="Motel" id="motel" checked>
+              <li class="filter-option">
+                <input class="visually-hidden" type="checkbox" name="Motel" id="motel" checked>
                 <label for="motel">Мотель</label>
               </li>
-              <li class="visually-hidden filter-option">
-                <input type="checkbox" name="apartments" id="apartments" checked>
+              <li class="filter-option">
+                <input class="visually-hidden" type="checkbox" name="apartments" id="apartments" checked>
                 <label for="apartments">Апартаменты</label>
               </li>
             </ul>
@@ -79,8 +81,8 @@
           <span class="sort-caption">Сортировка:</span>
           <ul class="sort-list">
             <li class="active"><a href="#">По цене</a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По рейтингу</a></li>
+            <li class="sort-list-item"><a href="#">По типу</a></li>
+            <li class="sort-list-item"><a href="#">По рейтингу</a></li>
           </ul>
           <div class="arrows">
             <a class="arrow arrow-down" href="#"><span class="visually-hidden">По возрастанию</span></a>
@@ -93,7 +95,7 @@
         <ul class="hotels-list">
 
           <li class="hotels-item">
-            <a class="hotel-item-image"><img src="img/amara.jpg" width="135" height="90" alt="Amara resort         &amp; spa"></a>
+            <a class="hotel-item-image"><img src="img/amara.jpg" width="135" height="90" alt="Amara resort&amp; spa"></a>
             <div class="hotel-item-info">
               <h3 class="hotel-item-title"><a href="#">Amara resort &amp; spa</a></h3>
               <p class="hotel-item-text">Гостиница</p>
@@ -109,7 +111,7 @@
           </li>
 
           <li class="hotels-item">
-            <a class="hotel-item-image"><img src="img/desert.jpg" width="135" height="90" alt="Desert quail         inn"></a>
+            <a class="hotel-item-image"><img src="img/desert.jpg" width="135" height="90" alt="Desert quail inn"></a>
             <div class="hotel-item-info">
               <h3 class="hotel-item-title"><a href="#">Desert quail inn</a></h3>
               <p class="hotel-item-text">Мотель</p>

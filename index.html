@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -33,23 +35,25 @@
         <ul class="features-list">
 
           <li class="features-item">
+            <div class="features-item-white">
             <h3 class="features-title">Настоящий городок</h3>
             <span class="features-number">&ndash;1&ndash;</span>
             <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
           </li>
           <li class="features-image">
             <img src="img/homes.jpg" width="800" height="401" alt="фотография домов">
           </li>
           <li class="features-item features-item-light">
-            <h3 class="features-title features-title-house">Жилье</h3>
+            <h3 class="features-title features-title-black">Жилье</h3>
             <p>Рекомендуем пожить а настоящем мотеле, как в кино!</p>
           </li>
           <li class="features-item features-item-light">
-            <h3 class="features-title features-title-food">Еда</h3>
+            <h3 class="features-title features-title-black">Еда</h3>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
           </li>
           <li class="features-item features-item-light">
-            <h3 class="features-title features-title-souvenir">Сувениры</h3>
+            <h3 class="features-title features-title-black">Сувениры</h3>
             <p>Рекомендуем пожить а настоящем мотеле, как в кино!</p>
           </li>
 
@@ -57,25 +61,27 @@
             <img src="img/rocks.jpg" width="800" height="400" alt="фотография моста">
           </li>
           <li class="features-item">
-            <h3 class="features-title">Там есть мост дьявола</h3>
+            <div class="features-item-white">
+              <h3 class="features-title">Там есть мост дьявола</h3>
             <span class="features-number">&ndash;2&ndash;</span>
             <p>Да, по нему можно пройти! если конечно вы осмелитесь</p>
+          </div>
           </li>
 
           <li class="features-item features-item-gray">
-            <h3 class="features-title">Небольшая площадь</h3>
+            <h3 class="features-title features-title-black">Небольшая площадь</h3>
             <span class="features-number">&ndash;3&ndash;</span>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
 
           <li class="features-item features-item-gray">
-            <h3 class="features-title">Красивая дорога</h3>
+            <h3 class="features-title features-title-black">Красивая дорога</h3>
             <span class="features-number">&ndash;4&ndash;</span>
             <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
           </li>
 
           <li class="features-item features-item-gray">
-            <h3 class="features-title">Мало туристов</h3>
+            <h3 class="features-title features-title-black">Мало туристов</h3>
             <span class="features-number">&ndash;5&ndash;</span>
             <p>Большинство едет в гранд каньон и толпится там</p>
           </li>
@@ -105,14 +111,14 @@
           <p>
             <label for="grownups">Взрослые:</label>
             <button class="search-btn search-btn-lower"><span class="visually-hidden">Уменьшить</span></button>
-            <input id="grownups" type="text" placeholder="2">
+            <input id="grownups" type="text" value="2">
             <button class="search-btn search-btn-raise"><span class="visually-hidden">Увеличить</span></button>
 
           </p>
           <p>
             <label for="children">Дети:</label>
             <button class="search-btn search-btn-lower"><span class="visually-hidden">Уменьшить</span></button>
-            <input id="children" type="text" placeholder="0">
+            <input id="children" type="text" value="0">
             <button class="seavisuallyrch-btn search-btn-raise"><span class="visually-hidden">Увеличить</span></button>
 
           </p>
