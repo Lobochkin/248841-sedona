@@ -1,21 +1,13 @@
 {
-  "name": "248841-sedona",
+  "name": "Личный проект «sedona»",
   "version": "1.0.0",
   "description": "* Студент: [Владимр Лобочкин](https://up.htmlacademy.ru/htmlcss/19/user/248841). * Наставник: [Сергей Кравченко]",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Lobochkin/248841-sedona.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Lobochkin/248841-sedona/issues"
-  },
-  "homepage": "https://github.com/Lobochkin/248841-sedona#readme",
+  "author": "Владимир Лобочкин",
+  "homepage": "https://github.com/Lobochkin/248841-sedona",
   "dependencies": {
     "stylelint": "^8.2.0"
   },

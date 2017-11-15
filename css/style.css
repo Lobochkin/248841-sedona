@@ -10,13 +10,12 @@
 }
 
 body {
-  margin-top: 0;
+  margin: 0;
   padding: 0;
   font-family: "PT Sans ", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   color: #333;
-
   text-transform: uppercase;
   background-color: #fff;
 }
@@ -38,7 +37,6 @@ a {
 
 .site-navigation {
   list-style: none;
-  background-color: #fff;
 }
 
 .site-navigation a {
@@ -64,12 +62,13 @@ a {
 }
 
 .filter-group,
-.filter-group-price {
+.filter-price {
   border: none;
 }
 
-.filter-group legend,
-.filter-group-price b {
+.filter-group-title,
+.filter-price,
+.filter-price-title {
   font-weight: bold;
   font-size: 16px;
   color: #fff;
@@ -87,7 +86,7 @@ a {
 }
 
 .filter-button {
-  font: inherit;
+  font-family: "PT Sans ", Arial, sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 26px;
@@ -112,14 +111,15 @@ a {
   color: #000;
 }
 
-.sort-list-item a {
+.sort-list-item a,
+.sort-list-item-type a {
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #81b3d2;
 }
 
 .hotel-item-btn,
 .hotel-item-btn-dark {
-  font: inherit;
+  font-family: "PT Sans ", Arial, sans-serif;
   font-weight: bold;
   color: #fff;
   font-size: 14px;
@@ -156,16 +156,14 @@ a {
 }
 
 .hotel-item-title a:active {
-  color: rgba(0, 0, 0, 0.3)
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .rank-grade {
   color: #666;
-  background-color: #f2f2f2;
 }
 
 .promo-text {
-  background-color: #fff;
   text-align: center;
 }
 
@@ -200,11 +198,6 @@ a {
 
 .features-item-white {
   color: #fff;
-}
-
-.features-item-light,
-.offer {
-  background-color: #fff;
 }
 
 .features-title-black {
@@ -247,7 +240,7 @@ a {
 }
 
 .search-popup {
-  font: inherit;
+  font-family: "PT Sans ", Arial, sans-serif;
   line-height: 26px;
   text-align: center;
   color: #000;
@@ -280,12 +273,12 @@ input span:hover {
 .search-btn span:active,
 input span:active,
 .social-btn,
-.copyright img:hover {
+.copyright:hover {
   background-color: #81b3d2;
 }
 
 .search-form-btn {
-  font: inherit;
+  font-family: "PT Sans ", Arial, sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 21px;
@@ -302,10 +295,6 @@ input span:active,
 .search-form-btn:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
-}
-
-.main-footer-wrapper {
-  background-color: #fff;
 }
 
 .main-footer-wrapper p,
@@ -334,10 +323,10 @@ input span:active,
   color: #000;
 }
 
-.copyright img {
+.copyright {
   background-color: #231f20;
 }
 
-.copyright img:active {
+.copyright:active {
   background-color: #bdbbbc;
 }
