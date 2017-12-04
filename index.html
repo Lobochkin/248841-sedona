@@ -38,7 +38,7 @@
           <li class="features-item">
             <h3 class="features-title">Настоящий городок</h3>
             <span class="features-number">&ndash; №1 &ndash;</span>
-            <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+            <p>Седона - не аттракцион для туристов, там&nbsp;течет своя жизнь</p>
           </li>
           <li class="features-image">
             <img src="img/homes.jpg" width="800" height="401" alt="фотография домов">
@@ -93,7 +93,9 @@
     </main>
 
     <footer class="main-footer">
-      <div class="map"><img src="img/map.jpg" width="1200" height="593" alt="Карта расположения Седоны">
+      <div class="map">
+        <iframe class="map-iframe" src="https://yandex.ru/map-widget/v1/-/CBaGvYbOgD"></iframe>
+        <img src="img/map.jpg" width="1200" height="593" alt="Карта расположения Седоны">
       </div>
       <div class="search-popup">
         <form class="search-form" href="search-form.html" action="echo.htmlacademy.ru" method="post">
@@ -113,14 +115,14 @@
             <p class="search-form-row number-person">
               <label for="grownups">Взрослые:</label>
               <button class="search-btn search-btn-lower"><span class="visually-hidden">Уменьшить</span></button>
-              <input class="search-form-input" id="grownups" type="text" value="2">
+              <input class="search-form-input" id="grownups" type="text" name="grownups" value="2">
               <button class="search-btn search-btn-raise"><span class="visually-hidden">Увеличить</span></button>
 
             </p>
             <p class="search-form-row number-person">
               <label for="children">Дети:</label>
               <button class="search-btn search-btn-lower"><span class="visually-hidden">Уменьшить</span></button>
-              <input class="search-form-input" id="children" type="text" value="0">
+              <input class="search-form-input" id="children" type="text" name="children" value="0">
               <button class="search-btn search-btn-raise"><span class="visually-hidden">Увеличить</span></button>
           </div>
           </p>
@@ -152,6 +154,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/popup.js"></script>
 </body>
 
 </html>
