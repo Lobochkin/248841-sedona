@@ -1218,14 +1218,11 @@ img {
 
 .rank-mark {
   height: 17px;
-  padding-right: 5px;
-  background: url(../img/icons/star.svg) repeat-x;
-  background-size: 23.5px 17px;
+  background: url(../img/icons/star.svg) space;
   margin-bottom: 47px;
 }
 
 .star4 {
-  overflow: hidden;
   height: 17px;
   width: 87px;
 }
