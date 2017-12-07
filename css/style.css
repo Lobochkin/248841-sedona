@@ -885,6 +885,10 @@ img {
   background: url(../img/icons/checkbox-on.svg);
 }
 
+.filter-field:focus + label {
+  outline: auto;
+}
+
 .filter-field:checked+.filter-label::after {
   display: block;
 }
